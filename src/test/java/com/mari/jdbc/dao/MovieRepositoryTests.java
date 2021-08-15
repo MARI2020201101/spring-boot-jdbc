@@ -30,7 +30,6 @@ public class MovieRepositoryTests {
                 Movie.builder().title("new movie2").regdate(LocalDateTime.now()).build());
     }
 
-    @Test
     public void insertWithSimpleInsertJdbcTest(){
         movieRepository.insertWithSimpleInsertJdbc(
                 Movie.builder().title("new movie3").regdate(LocalDateTime.now()).build());
